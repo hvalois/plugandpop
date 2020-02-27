@@ -1,0 +1,70 @@
+#mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000000cc;
+    color: #fff;
+    display: none;
+    transition: 0.5s all ease-in-out;
+}
+
+#boxes .frame {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: 80vh;
+    margin-top: calc(-40vh - 10px);
+    display: none;
+    z-index: 9999;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+}
+
+#boxes #dialog {
+    width: auto;
+    height: 80vh;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+#pop img.banner {
+    max-height: 80vh;
+    min-height: 80vh;
+}
+
+.close {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    background-position: center bottom;
+}
+
+.close:hover {
+    background-color: #c0c0c0;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    content: ' ';
+    height: 20px;
+    width: 5px;
+    background-color: #790000;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
